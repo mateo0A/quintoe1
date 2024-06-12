@@ -1,0 +1,209 @@
+
+body{
+    color: white;
+    justify-content: center;
+    background:linear-gradient(
+        180deg,
+        #000000 0%,
+        #3f2727 10%,
+        #611f1f 20%,
+        #881919 30%,
+        #2e1212 40%
+    ) ;
+
+}
+@font-face {
+    font-family: titu;
+    src: url(/Arcade\ Classic.ttf);
+}
+@keyframes ti {
+    0%{
+     text-shadow:0 0 10px rgb(255, 255, 255);
+    } 
+    25%{
+     text-shadow:0 0 10px rgb(172, 27, 27);
+    }
+    50%{
+     text-shadow:0 0 10px rgb(192, 189, 11);
+    }
+    75%{
+     text-shadow:0 0 10px rgb(136, 230, 14);
+    }
+    100%{
+     text-shadow:0 0 10px rgb(12, 41, 170);
+    }
+ }
+h1{
+    
+    text-shadow: 0 0 10px rgb(172, 179, 172);
+    text-align: center;
+    font-family: titu;
+    font-size: 400%;
+    animation: ti 6s linear infinite;
+}
+.b{
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    height: 10%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+}
+.btn:hover{
+    scale: 1.1;
+    background-color: #5f5959;
+}
+.btn{
+    position: relative;
+    transition-duration: 0.2s;
+    margin: auto;
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+.cnt{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.ip{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    animation: show 2s;
+    border:10px solid gray;
+    box-sizing: content-box;
+}
+@keyframes show2 {
+    from{
+        opacity: 0;
+        scale: 10%;
+        box-shadow: 0 0 0px white;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+        box-shadow: 0 0 10px white;
+    }
+}
+.i1{
+    width: 32%;
+    height: 40%;
+    view-timeline-name: --image;
+    view-timeline-axis: block ;
+    animation-timeline: --image;
+    animation-name: show2 ;
+    animation-range: entry 50% cover 50%;
+    animation-fill-mode: both;
+
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+        
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(0);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.imag{
+    
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: texto;
+    src: url(/MADEAwelierPERSONALUSE-Light.otf);
+}
+.texto{
+    width: 90%;
+    margin: auto;
+    font-size: 150%;
+    font-family: texto;
+}
+@keyframes s1 {
+    0%{
+        transform: translateY(0);
+        
+        
+    }
+    50%{
+        transform: translateY(-5px);
+        box-shadow: 0 0 5px white;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes s2 {
+    0%{
+        transform: translateY(0);
+        
+        
+    }
+    50%{
+        transform: translateY(5px);
+        box-shadow: 0 0 5px white;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.i2{
+    width: 17%;
+    height: 30%;
+ 
+}
+#f1,#f3{
+    animation: s1 2.5s linear infinite;
+}
+#f2,#f4{
+    animation: s2 2.5s linear infinite;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+.cntbin{
+    position: sticky;
+    width: 10%;
+    height: 10%;
+    top: 87%;
+    left: 89%;
+    place-content: center;
+    text-align: center;
+    transition: 200ms;
+    border-radius: 100%;
+}
+.cntbin:hover{
+    scale: 1.2;
+    transform: rotate(180deg)
+    
+}
+.bti{
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 11% 20%;
+    border-radius: 50%;
+    font-size: 250%;
+}

@@ -1,0 +1,161 @@
+body{
+    background:linear-gradient(
+        180deg,
+        #000000 0%,
+        #3f2733 10%,
+        #611f35 20%,
+        #881922 30%,
+        #2e1219 40%
+    ) ;
+    color: white;
+    justify-content: center;
+    
+}
+@font-face {
+    font-family: titu;
+    src: url(/Arcade\ Classic.ttf);
+}
+@keyframes ti {
+    0%{
+     text-shadow:0 0 10px rgb(255, 255, 255);
+    } 
+    25%{
+     text-shadow:0 0 10px rgb(172, 27, 27);
+    }
+    50%{
+     text-shadow:0 0 10px rgb(192, 189, 11);
+    }
+    75%{
+     text-shadow:0 0 10px rgb(136, 230, 14);
+    }
+    100%{
+     text-shadow:0 0 10px rgb(12, 41, 170);
+    }
+ }
+h1{
+    
+    text-shadow: 0 0 10px rgb(172, 179, 172);
+    text-align: center;
+    font-family: titu;
+    font-size: 400%;
+    animation: ti 6s linear infinite;
+}
+.b{
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    height: 10%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+}
+.btn:hover{
+    scale: 1.1;
+    background-color: #5f5959;
+}
+.btn{
+    position: relative;
+    transition-duration: 0.2s;
+    margin: auto;
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+.cnt{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+*{
+    scroll-behavior: smooth;
+}
+.cntbin{
+    position: sticky;
+    width: 10%;
+    height: 10%;
+    top: 87%;
+    left: 89%;
+    place-content: center;
+    text-align: center;
+    transition: 200ms;
+    border-radius: 100%;
+    z-index: 1;
+    
+}
+.cntbin:hover{
+    scale: 1.2;
+    transform: rotate(180deg)
+    
+}
+
+.bti{
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 11% 16%;
+    border-radius: 50%;
+    font-size: 250%;
+}
+@keyframes show1{
+     0%{
+        box-shadow:0 0 10px #f80404;
+     }
+     25%{
+        box-shadow:0 0 10px #000000;
+     }
+     50%{
+        box-shadow:0 0 10px #aa0558;
+     }
+     75%{
+        box-shadow:0 0 10px #000000;
+     }
+     100%{
+        box-shadow:0 0 10px #85032e;
+     }
+}
+img{
+    width: 50%;
+    animation: show1 4s linear infinite alternate-reverse;
+    
+}
+p{
+    font-size: 200%;
+}
+@font-face {
+    font-family:subt ;
+    src: url(/Romania.ttf);
+}
+h2{
+    font-family: subt;
+    font-size: 340%;
+}
+.te{
+    width: 85%;
+    margin: auto;
+}
+.enl{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 5%;
+    justify-content: center;
+}
+.session{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    padding: 4% 3%;
+    border-radius: 10%;
+    transition: 300ms;
+}
+.session:hover{
+    scale: 1.2;
+    box-shadow: 0 0 5px white;
+}
